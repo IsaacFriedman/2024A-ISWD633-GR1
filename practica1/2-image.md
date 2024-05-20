@@ -61,6 +61,7 @@ docker inspect hello-world
 ```
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
+
 Cada vez que se crea una nueva imagen, Docker calcula un hash SHA-256 de los contenidos de la imagen, garantizando así un identificador único para cada imagen basada en su contenido.
 
 ### Filtrar imágenes
