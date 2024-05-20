@@ -60,9 +60,9 @@ docker run --name srv-web2 nginx:alpine
 ```
 
 **¿Qué sucede luego de la ejecución del comando?**
-# COMPLETAR  
 
 Cuando ejecutas un contenedor en primer plano sin la opción -d (modo detach), el contenedor captura la entrada estándar (stdin) del terminal, lo que significa que el terminal queda "atrapado" y no puedes introducir más comandos hasta que detengas el contenedor.
+
 
 ### Para crear un contenedor y ejecutarlo inmediatamente sin estar vinculados al mismo
 -d: Es la opción que indica a Docker que ejecute el contenedor en segundo plano (en modo "detach").
@@ -88,7 +88,7 @@ docker rm hello-world
 ```
 
 Verificar que el contenedor que se eliminó
-# COMPLETAR
+![Hello word removido](imagenes/rmHelloWorld.png)
 
 ### Para eliminar un contenedor que esté ejecutándose
 
@@ -101,7 +101,7 @@ docker rm -f srv-web3
 ```
 
 Verificar que el contenedor que se eliminó
-# COMPLETAR
+![Srv Web 3 removido](imagenes/rmSrvWeb3.png)
 
 ### Para inspecionar un contenedor 
 
