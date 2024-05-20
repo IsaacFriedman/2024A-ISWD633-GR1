@@ -24,10 +24,14 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
+```
 docker pull hello-world
+```
 
 **¿Qué es nginx?**
+
 Nginx es un servidor web de código abierto que también funciona como proxy inverso, balanceador de carga, y proxy de correo. Es conocido por su alto rendimiento, estabilidad, y bajo consumo de recursos, lo que lo hace ideal para manejar grandes volúmenes de tráfico web.
+
 
 Descargar la imagen  **nginx** en la versión **alpine**
 docker pull nginx:alpine
@@ -52,7 +56,9 @@ docker inspect <nombre imagen>:<tag>
 ```
 
 Inspeccionar la imagen hello-world 
+```
 docker inspect hello-world
+```
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
 Cada vez que se crea una nueva imagen, Docker calcula un hash SHA-256 de los contenidos de la imagen, garantizando así un identificador único para cada imagen basada en su contenido.
