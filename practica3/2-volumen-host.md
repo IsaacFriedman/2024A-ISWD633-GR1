@@ -7,8 +7,6 @@ docker run -d --name <nombre contenedor> -v <ruta carpeta host>:<ruta carpeta co
 
 ### Crear un volumen tipo host con la imagen nginx:alpine, para la ruta carpeta host: directorio en donde se encuentra la carpeta html en tu computador y para la ruta carpeta contenedor: /usr/share/nginx/html esta ruta se obtiene al revisar la se obtiene desde la documentación
 
-#ME GUSTA EL PENE
-
 ![Volúmenes](imagenes/volumen-host.PNG)
 ```
 docker run -d -v C:\Users\DELL3\Desktop\Html:/usr/share/nginx/html -p 8080:80 --name mi-nginx nginx:alpine
