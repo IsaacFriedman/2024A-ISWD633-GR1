@@ -2,11 +2,13 @@
 ![Imagen](imagenes/esquema-ejercicio3.PNG)
 
 ### Crear red net-wp
-# COMPLETAR CON EL COMANDO COMANDO
+```
+docker network create net-wp
+```
 
-### Para que persista la información es necesario conocer en dónde mysql almacena la información.
-# COMPLETAR LA SIGUIENTE ORACIÓN. REVISAR LA DOCUMENTACIÓN DE LA IMAGEN EN https://hub.docker.com/)
-En el esquema del ejercicio la carpeta contenedor (a) es (COMPLETAR CON LA RUTA)
+### Para que persista la información es necesario conocer en dónde mysql almacena la información. La almacena en: /var/lib/mysql dentro del contenedor. Al montar un volumen en esta ruta, los datos se almacenarán en el host, asegurando que persistan incluso si el contenedor es eliminado o reiniciado.
+
+En el esquema del ejercicio la carpeta contenedor (a) es C:\Users\DELL3\Desktop\Practicas Construccion\ejercicio3\db
 Ruta carpeta host: .../ejercicio3/db
 
 ### ¿Qué contiene la carpeta db del host?
