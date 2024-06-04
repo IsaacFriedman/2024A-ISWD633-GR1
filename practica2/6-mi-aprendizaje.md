@@ -1,3 +1,4 @@
-# COMPLETAR  
-Comparando sus conocimientos antes de hacer la práctica con sus conocimientos después de hacer la tarea, explicar los principales aprendizajes logrados para beneficio de su formación profesional.  
-Si solucionó un problema presentado al realizar la práctica también se debe documentar.
+# APRENDIZAJE OBTENIDO 
+Antes de meterme con Docker, mi conocimiento sobre manejo de contenedores, configuración de puertos, variables de entorno y redes era casi nulo. Pero, después de completar la práctica, he desarrollado habilidades fundamentales.
+
+Ahora sé cómo usar variables de entorno para configurar aplicaciones de manera más flexible y segura. Además, aprendí a exponer servicios a través de puertos específicos, esencial para la interacción de los contenedores con el exterior. Otra área fue la creación y gestión de redes en Docker, lo que permite conectar contenedores entre sí.
