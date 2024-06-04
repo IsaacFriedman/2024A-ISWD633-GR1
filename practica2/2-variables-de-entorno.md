@@ -11,22 +11,30 @@ docker run -d --name <nombre contenedor> -e <nombre variable1>=<valor1> -e <nomb
 ### Crear un contenedor a partir de la imagen de nginx:alpine con las siguientes variables de entorno: username y role. Para la variable de entorno rol asignar el valor admin.
 
 ```
-docker run -d --name Practica2 -e username=<valor1> -e role=admin
+docker run -d --name Practica2 -e username=admin -e role=admin nginx:alpine
 ```
-
-# CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR
+Verificación de variables de entorno
+```
+docker exec Practica2 printenv
+```
+![Imagen](imagenes/cap5-variables.png)
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos
-# COMPLETAR
+```
+docker run -P -d --name contenedor2 mysql:8
+```
 
 ### ¿El contenedor se está ejecutando?
-# COMPLETAR
+No, no se esta ejecutando
+![Imagen](imagenes/cap6-logs.png)
 
 ### Identificar el problema
-# COMPLETAR
+El problema que se muestra en los logs del contenedor contenedor2 es que MySQL no puede iniciar porque no se ha especificado una contraseña para el usuario root. MySQL requiere una contraseña para el usuario root para la inicialización de la base de datos por razones de seguridad
 
 ### Eliminar el contenedor creado con mysql:8 
-# COMPLETAR
+```
+docker rm contenedor2
+```
 
 ### Para crear un contenedor con variables de entorno especificadas
 - Portabilidad: Las aplicaciones se vuelven más portátiles y pueden ser desplegadas en diferentes entornos (desarrollo, pruebas, producción) simplemente cambiando el archivo de variables de entorno.
@@ -43,9 +51,11 @@ docker run -d --name <nombre contenedor> --env-file=<nombreArchivo>.<extensión>
 Es necesario especificar la ruta absoluta del archivo si este se encuentra en una ubicación diferente a la que estás ejecutando el comando docker run.
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos y configurar las variables de entorno mediante un archivo
-# COMPLETAR
+```
+docker run -P -d --name contenedor3 --env-file=mysqlVariables.env mysql:8
+```
 
-# CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
+![Imagen](imagenes/cap7-contSQL.png)
 
 ### ¿Qué bases de datos existen en el contenedor creado?
-# COMPLETAR
+![Imagen](imagenes/cap8-bd.png)
