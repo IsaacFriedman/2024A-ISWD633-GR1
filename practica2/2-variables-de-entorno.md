@@ -58,4 +58,4 @@ docker run -P -d --name contenedor3 --env-file=mysqlVariables.env mysql:8
 ![Imagen](imagenes/cap7-contSQL.png)
 
 ### ¿Qué bases de datos existen en el contenedor creado?
-![Imagen](imagenes/cap8-bd.png)
+
