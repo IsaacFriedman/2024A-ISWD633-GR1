@@ -23,7 +23,7 @@ docker run -d --name mysql --env-file ${PWD}/ejercicio3/pass.env -v ${PWD}/ejerc
  Ahora la carpeta db contiene los archivos y directorios que tiene el contenedor MySQL creado en su directorio /var/lib/mysql. 
 
 ### Para que persista la información es necesario conocer en dónde wordpress almacena la información.
-# COMPLETAR LA SIGUIENTE ORACIÓN. REVISAR LA DOCUMENTACIÓN DE LA IMAGEN EN https://hub.docker.com/)
+
 En el esquema del ejercicio la carpeta contenedor (b) es (/var/www/html)
 Ruta carpeta host: C:\Users\DELL3\Desktop\Practicas Construccion\ejercicio3\db
 
